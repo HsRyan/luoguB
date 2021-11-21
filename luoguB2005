@@ -1,0 +1,22 @@
+#include <stdio.h>
+int SJX(int n)
+{
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<=n-i;j++)
+            putchar(' ');
+        for(j=0;j<2*i+1;j++)
+            putchar('*');
+        putchar('\n');
+    }
+    return 0;
+}
+int main()
+{
+    int n;
+    printf("输入三角形的高n：\n");
+    scanf("%d",&n);
+    SJX(n);
+    return 0;
+}
